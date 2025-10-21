@@ -10,7 +10,7 @@ Criar uma solução que recebe o nome e as notas de atletas, calcula a média v�
 
 ✅ Ordena as notas para identificar maiores e menores
 
-✅ Calcula média baseada nas três notas centrais
+✅ Calcula média baseada nas notas centrais
 
 ✅ Apresenta resultados formatados
 
