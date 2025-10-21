@@ -17,3 +17,19 @@ let atletas = [
  }
 ];
 
+const mediaNotas = (dados) => {
+    const media = dados.map((d) => {
+        let notasValidas = d.notas.sort((a, b) => a - b).slice(1 , -1);
+        //  console.log(nota);
+        
+        const mediaNota = notasValidas.reduce((acc, n) => acc + n , 0) / notasValidas.length;
+        // console.log(mediaNota);
+        
+        const retorno =`Atleta: ${d.nome}\nNotas Obtidas: ${d.notas.join(",")}\nMédia Válida: ${mediaNota}`;
+        
+        return retorno
+    })
+    return media.join(`\n\n`);
+}
+
+console.log(mediaNotas(atletas));
